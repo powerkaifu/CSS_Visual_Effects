@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>深色背景中的霓虹感</title>
+   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+
+   <style>
+      html,
+      body {
+         height: 100%;
+      }
+
+      * {
+         margin: 0;
+         padding: 0;
+         list-style: none;
+         font-family: 'Great Vibes', cursive;
+         font-family: 'Alex Brush', cursive;
+         font-family: 'Italianno', cursive;
+      }
+
+      body {
+         background:
+            linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            radial-gradient(transparent, rgba(0, 0, 0, 1) 100%),
+            url("https://picsum.photos/1920/1080/?random=1") no-repeat fixed center center/cover;
+      }
+
+      .container {
+         width: 100%;
+         height: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         backdrop-filter: grayscale(100%);
+      }
+
+      .main_text {
+         font-size: 10rem;
+         color: #FFF;
+         text-shadow: 0 0 1000px rgba(0, 174, 255, 0.4);
+         filter: drop-shadow(0 0 5px rgb(0, 174, 255)) drop-shadow(0 0 8px rgb(0, 174, 255)) drop-shadow(0 0 120px rgb(0, 174, 255));
+      }
+   </style>
+</head>
+
+<body>
+   <div class="container">
+      <div class="main_text">Kaifu Chang</div>
+   </div>
+</body>
+
+</html>
